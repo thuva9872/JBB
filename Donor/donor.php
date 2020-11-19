@@ -1,6 +1,6 @@
 <?php
-include_once ('C:\xampp\htdocs\BMSnew\class.php');
-include_once ('C:\xampp\htdocs\BMSnew\Login\LoginUser.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\class.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\Login\LoginUser.php');
 class Donor extends User  implements LoginUser {
     public  
       

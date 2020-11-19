@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once ('C:\xampp\htdocs\BMSnew\Login\Factory.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\Login\Factory.php');
   $factory=new Factory();
   $user = $factory->getUser("hospital");
 if (isset($_POST["change"])){

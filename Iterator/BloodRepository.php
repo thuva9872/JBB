@@ -1,7 +1,7 @@
 <?php
 include_once ("Container.php");
 include_once ('BloodIterator.php');
-include_once ('C:\xampp\htdocs\BMSnew\class.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\class.php');
     class BloodRepository implements Container{
         //private $blood=array();
         private $total=0;
