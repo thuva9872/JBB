@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once ('C:\xampp\htdocs\BMSnew\Login\Factory.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\Login\Factory.php');
   $factory=new Factory();
   $user = $factory->getUser("hospital");
 if (!$user->session()){  
@@ -35,9 +35,9 @@ $count=$user->view_blood_inventory();
         <nav>
             <ul>
                 <li></li>
-                <li> <a href="\BMSnew/Hospital/blood_request.php"> Blood Request</a> </li>
-                <li> <a href="\BMSnew/Hospital/blood_inventory.php"> View Blood Inventory</a> </li>
-                <li> <a href="\BMSnew/Hospital/view_message.php">Messsages</a> </li>
+                <li> <a href="\BMSfin/JBB/Hospital/blood_request.php"> Blood Request</a> </li>
+                <li> <a href="\BMSfin/JBB/Hospital/blood_inventory.php"> View Blood Inventory</a> </li>
+                <li> <a href="\BMSfin/JBB/Hospital/view_message.php">Messsages</a> </li>
                 <li></li> 
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
@@ -52,9 +52,9 @@ $count=$user->view_blood_inventory();
         </div>
 
        <div class="sidebar">
-       <a href="\BMSnew/Hospital/hospitals main page/index.php"> <img src="new-hospital-page-resorce/homelogo.png"  class="homelogo"> </a>
+       <a href="\BMSfin/JBB/Hospital/hospitals main page/index.php"> <img src="new-hospital-page-resorce/homelogo.png"  class="homelogo"> </a>
 
-          <a href="\BMSnew/Hospital/edit_profile.php"> <img src="new-hospital-page-resorce/update.png"  class="update"> </a>
+          <a href="\BMSfin/JBB/Hospital/edit_profile.php"> <img src="new-hospital-page-resorce/update.png"  class="update"> </a>
        </div>
        
        <!-- this div for info about donor page-->

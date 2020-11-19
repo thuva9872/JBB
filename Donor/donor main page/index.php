@@ -3,16 +3,16 @@
 <!DOCTYPE html>
 <?php
   session_start();  
-  include_once ('C:\xampp\htdocs\BMSnew\Login\Factory.php');
+  include_once ('C:\xampp\htdocs\BMSfin\JBB\Login\Factory.php');
   $factory=new Factory();
   $user = $factory->getUser("donor");  
   $id = $_SESSION['id'];  
   if (!$user->session()){  
-    header("location:\BMSnew\Donor\login.php");  
+    header("location:\BMSfin\JBB\Donor\login.php");  
   }  
   if (isset($_REQUEST['q'])){  
     $user->logout();  
-    header("location:\BMSnew\Donor\login.php");  
+    header("location:\BMSfin\JBB\Donor\login.php");  
   }  
 ?>
 
@@ -43,9 +43,9 @@
         <nav>
             <ul>
                 <li></li>
-                <li> <a href="\BMSnew/Donor/donation_details.php"> Donation Details</a> </li>
-                <li> <a href="\BMSnew/Donor/blood_camp.php"> Blood camps</a> </li>
-                <li> <a href="\BMSnew/Donor/view_message.php">MEsssages</a> </li>
+                <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
+                <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood camps</a> </li>
+                <li> <a href="\BMSfin/JBB/Donor/view_message.php">MEsssages</a> </li>
                 <li></li> <li></li>  
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
@@ -60,9 +60,9 @@
         </div>
 
        <div class="sidebar">
-          <a href="\BMSnew/Donor/donor main page/index.php"> <img src="new-donor-page/homelogo.png"  class="homelogo"> </a>
+          <a href="\BMSfin/JBB/Donor/donor main page/index.php"> <img src="new-donor-page/homelogo.png"  class="homelogo"> </a>
 
-          <a href="\BMSnew/Donor/edit_profile.php"> <img src="new-donor-page/update.png"  class="update"> </a>
+          <a href="\BMSfin/JBB/Donor/edit_profile.php"> <img src="new-donor-page/update.png"  class="update"> </a>
        </div>
        
        <!-- this div for info about donor page-->

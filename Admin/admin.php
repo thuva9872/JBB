@@ -1,7 +1,7 @@
 <?php
-include_once ('C:\xampp\htdocs\BMSnew\class.php');
-include_once ('C:\xampp\htdocs\BMSnew\Blood\blood.php');
-include_once ('C:\xampp\htdocs\BMSnew\Login\LoginUser.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\class.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\Blood\blood.php');
+include_once ('C:\xampp\htdocs\BMSfin\JBB\Login\LoginUser.php');
 class Admin extends User implements LoginUser{
     private static $admin;
     private final function __construct(){}
