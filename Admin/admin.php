@@ -29,7 +29,9 @@ class Admin extends User implements LoginUser{
             echo "incorret username or password";
         }
         else{
-            if ($user['Password']==md5($pass)){
+            $validpw=password_verify($pass, $user['Password']);
+            $validpw1=stripslashes($user['Password'])==md5($pass);
+            if ($validpw1){
                 $_SESSION['login'] = true;  
                 $_SESSION['id'] = $user_name;  
 
