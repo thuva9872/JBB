@@ -1,0 +1,2 @@
+//    <h1>Welcome <?php $user
+https://thisinterestsme.com/php-user-registration-form/->fullname($id);?></h1>  
