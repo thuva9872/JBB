@@ -62,10 +62,10 @@
         <nav>
             <ul>
                 <li></li>
-                <li> <a href="request_donation.php">REQUST-BLOOD</a> </li>
+                <li> <a href="request_donation.php">REQUEST-BLOOD</a> </li>
                 <li> <a href="manage_hospital.php" >MANNAGE-HOSPITALS</a> </li>
                 <li> <a href="manage_donor.php" >MANNAGE-DONORS</a> </li>
-                <li> <a href="view_request.php" >VIEW-REQUES</a> </li>
+                <li> <a href="view_request.php" >VIEW-REQUEST</a> </li>
                 <li> <a href="blood_camp.php"  >ADD-BLOOD-CAMP</a> </li>
                 <li> <a href="add_blood.php" >ADD-BLOOD</a> </li>
                 <li> <a href="blood_inventory.php" >BLOOD-INVENTORY</a> </li>

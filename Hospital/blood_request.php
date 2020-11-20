@@ -132,7 +132,7 @@ if(isset($_POST['request'])){
         <option value="emergency">EMERGENCY </option>
         <option value="urgent">URGENT</option>
         <option value="STANDARD"> STANDARD </option>
-        <option value="SAVE"> GROUP & SAVE</option>
+        <option value="Group & Save"> GROUP & SAVE</option>
       </optgroup>
       
     </select>

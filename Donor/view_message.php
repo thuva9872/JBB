@@ -10,7 +10,20 @@
     $blood_type=$user->get_blood_group();
 
 ?>
-
+<?php
+   
+   include_once ('C:\xampp\htdocs\BMSfin\JBB\Login\Factory.php');
+   $factory=new Factory();
+   $user = $factory->getUser("donor");  
+   $id = $_SESSION['id'];  
+   if (!$user->session()){  
+     header("location:\BMSfin\JBB\Donor\login.php");  
+   }  
+   if (isset($_REQUEST['q'])){  
+     $user->logout();  
+     header("location:\BMSfin\JBB\Donor\login.php");  
+   }  
+ ?>
 
 
 
@@ -43,7 +56,8 @@
                 <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
                 <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood camps</a> </li>
                 <li> <a href="\BMSfin/JBB/Donor/view_message.php">Messsages</a> </li>
-                <li></li>  <li></li>  <li></li>
+                <li></li>
+                <li> <a href="?q=logout"> LOG-OUT</a> </li>
                 
             </ul></nav>
             <div class="user">
@@ -73,7 +87,7 @@
         ?>
         <tr>
             <td><?php echo $data["Message"]; ?></td>
-            <td><?php echo $data["Date"]; ?></td>
+            <td><?php echo substr($data["Date"],0,10); ?></td>
             
         </tr>
         <?php
