@@ -143,7 +143,7 @@ class Donor extends User  implements LoginUser {
       public function view_blood_camp(){
         $db=new DB();
         $dbz=$db->getdb();
-        $query="SELECT * FROM blood_camp ORDER BY Date,Time DESC";
+        $query="SELECT * FROM blood_camp ORDER BY Date DESC, Time Desc";
         $d=$dbz->query($query);
         return $d;
     }
