@@ -7,7 +7,11 @@
        if(isset($_POST['create'])){ 
         $register = $user->register($_REQUEST['name'], $_REQUEST['nic_no'], stripslashes($_REQUEST['password1']),stripslashes($_REQUEST['password2']), $_REQUEST['address'], $_REQUEST['mobile_no'], $_REQUEST['age'], $_REQUEST['blood_group']);  
           if($register){  
-             echo "Registration Successful!";  
+            echo ("<SCRIPT LANGUAGE='JavaScript'>
+    window.alert('Succesfully Registered')
+    window.location.href='../index.php';
+    </SCRIPT>");
+            //echo '<script type="text/javascript"> alert("Re")</script>'; 
           }
           else
           {  
@@ -51,7 +55,7 @@
             <input type="text" name="name" required>
 
             <label for="nic">NIC-NO:</label>
-            <input type="text" name="nic_no" required>
+            <input type="text" name="nic_no" pattern="^([0-9]{9}[x|X|v|V]|[0-9]{12})$" maxlength="12" required>
 
             <label for="password">Password:</label>
             <input type="password" name="password1" required>
