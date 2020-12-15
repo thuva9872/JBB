@@ -22,9 +22,15 @@
           }  
        }  
     ?>  
-       <html>
+<html lang="en">
+
+<HEAD>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DONOR LOGIN</title>
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="login-framecss.css" type="text/css">
+ 
 <style>
         .btn{
             width: 300px;
@@ -34,6 +40,8 @@
 
         }
         </style>
+</HEAD>
+<BODY>
 <div class="login">
   <div class="login-header">
     <h1>DONOR LOGIN</h1>
@@ -52,5 +60,5 @@
     
   </div>
 </div>
-
+</BODY>
 </html>
