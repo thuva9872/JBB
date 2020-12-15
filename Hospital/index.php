@@ -18,11 +18,12 @@
 
 
 
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<HEAD>
-
-    <title>hospital main page</title>
+    <title>HOSPITAL</title>
     <link rel="stylesheet" href="new-hospital-page-resorce/1.css">
    <style>
        h2 {text-align: center;}
@@ -42,11 +43,9 @@
         
         <nav>
             <ul>
-                <li></li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_request.php"> Blood Request</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_inventory.php"> View Blood Inventory</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/view_message.php">Messsages</a> </li>
-                <li></li> 
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
 
@@ -70,22 +69,16 @@
        <div class="msg-container">
          <div id="slider">
               <div class="msg-col">
-                 <h1> BLOOD REQUEST</h1>
-                 <p>  request for blood</p>
                  <img src="new-hospital-page-resorce/bloodre.png" alt="req" width="500" height="600">
 
               </div>
               <br>
               <div class="msg-col">
-                <h1> View BLOOD INVENTORY</h1>
-                <p> you can view our storage</p>
                 <img src="new-hospital-page-resorce/bloodin.png" alt="inventt" width="400" height="400">
 
              </div>
 
              <div class="msg-col">
-                <h1>  Messages</h1>
-                <p> admin sends msg</p>
                 <img src="new-hospital-page-resorce/msg.png" alt="msg" width="400" height="400">
              </div>
 

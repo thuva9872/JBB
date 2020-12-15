@@ -15,8 +15,11 @@
           }  
        }  
     ?>  
- <link rel="stylesheet" href="reg.css" type="text/css">
+<!DOCTYPE html>
+<html>
+  
  <head>
+       <link rel="stylesheet" href="reg.css" type="text/css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOSPITAL-Sign Up Form</title>
@@ -53,10 +56,13 @@
           <label for="name">HOSPITAL NAME</label>
           <input type="text" id="name" name="name" required> 
 
-          <label for="Addres">Address:</label>
+
+          <label for="Addres">ADDRESS:</label>
+
       <textarea id="Address" name="address"></textarea>
           
           <label for="mail">MOBILE NUMBER:</label>
+
           <input type="number" id="name" name="mobile_no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10" required>
           
           <label for="password">Password:</label>
@@ -75,8 +81,9 @@
           <input type="password" id="password" name="password2" required>
           
           
-        </fieldset>
+       </fieldset>
         
+
 
         <input type="submit" id='register' name="create" value="SignUp" class="btn">
         <br><br><br><br><br>
@@ -107,3 +114,4 @@
     } 
     </script> 
 </html>
+
