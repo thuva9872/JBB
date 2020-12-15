@@ -17,15 +17,17 @@
        }  
     ?>  
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DONOR RESTRATION</title>
+    <title>DONOR RESISTRATION</title>
 
-<link rel="stylesheet" href="reg.css" type="text/css">
+    <link rel="stylesheet" href="reg.css" type="text/css">
 <link rel="stylesheet" href="css/normalize.css">
 <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/main.css">        
+<link rel="stylesheet" href="css/main.css"> 
+    </head>       
 <style>
     body {
         background-image: url('Donn.jpg');
@@ -75,6 +77,8 @@
             <legend><span class="number">B</span>YOUR PROFILE</legend>
             <label for="Address">ADDRESS:</label>
             <textarea id="Address" name="address" required></textarea>
+    </fieldset>
+    <fieldset>
             <label for="mobile-no">MOBILE-NO:</label>
             <input type="mobile-no" name="mobile_no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10" required> 
 
