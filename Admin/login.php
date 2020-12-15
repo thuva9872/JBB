@@ -12,13 +12,13 @@
        if (isset($_POST['login'])){  
           $login = $user->login($_REQUEST['Username'],$_REQUEST['Password']);  
           if($login){  
-              echo "loginned";
+              //echo "loginned";
              header("location:index.php");  
           }
-          else
-          {  
-             echo "Login Failed!";  
-          }  
+         //  else
+         //  {  
+         //     echo "Login Failed!";  
+         //  }  
        }  
     ?> 
 <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>

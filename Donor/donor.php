@@ -32,6 +32,20 @@ class Donor extends User  implements LoginUser {
                 
         }
     }
+    public function validate_age($nic){
+        if (strlen($nic)==10){
+            if ("19".substr($nic,0,2)<=date("Y")-18){
+               
+                return TRUE;
+            }
+        }
+        else{
+            if (substr($nic,0,4)<=date("Y")-18){
+                return TRUE;
+            }
+        }
+        return FALSE;
+    }
     public  
       
         function register($name, $nic, $password1,$password2, $address, $mobile_no, $age, $blood_type) {  
@@ -39,6 +53,7 @@ class Donor extends User  implements LoginUser {
             $sql = "INSERT INTO donors (Name,NIC_NO,Password,Address,Mobile_No,Age,Blood_Type) VALUES (?,?,?,?,?,?,?)"; 
             $dbz=$db->getdb();
             $stmtinsert=$dbz->prepare($sql);
+            if ($this->validate_age($nic)){
                     if ($password1==$password2){
                         $passworden=md5($password1);
                         $passworden1 = password_hash($password1, PASSWORD_DEFAULT);
@@ -55,15 +70,18 @@ class Donor extends User  implements LoginUser {
                         catch (PDOException $e){
                             if ($e->errorInfo[1]=1062){
                                 echo '<script type="text/javascript"> alert("User Name already exists")</script>';
+                                return FALSE;
                             }
                         }
                 }else{
                     echo '<script type="text/javascript"> alert("Confirm Password does not match")</script>';
                     return false;
                 }                
-                  
-            
-            return true; 
+                return true; 
+            }
+            else{
+                echo '<script type="text/javascript"> alert("You are under 18.")</script>';
+            }
         } 
         public function edit_profile($address,$mobile_no){
             $dbz=new DB();
