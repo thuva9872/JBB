@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>JF BLOOD_BANK</title>
+    <title>HOSPITAL</title>
     <link rel="stylesheet" href="new-hospital-page-resorce/1.css">
    <style>
        h2 {text-align: center;}
@@ -43,9 +43,9 @@
         
         <nav>
             <ul>
-                <li> <a href="\BMSfin/JBB/Hospital/blood_request.php"> BLOOD REQUEST</a> </li>
-                <li> <a href="\BMSfin/JBB/Hospital/blood_inventory.php"> VIEW BLOOD INVENTORY</a> </li>
-                <li> <a href="\BMSfin/JBB/Hospital/view_message.php">MESSAGES</a> </li>
+                <li> <a href="\BMSfin/JBB/Hospital/blood_request.php"> Blood Request</a> </li>
+                <li> <a href="\BMSfin/JBB/Hospital/blood_inventory.php"> View Blood Inventory</a> </li>
+                <li> <a href="\BMSfin/JBB/Hospital/view_message.php">Messsages</a> </li>
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
 
