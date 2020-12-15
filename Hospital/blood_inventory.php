@@ -65,8 +65,8 @@ $count=$user->view_blood_inventory();
 
 <table border="3" cellpadding="5" cellspacing="5" align="centre"  class="rwd-table">
 <tr> 
-    <th> Blood Typr</th>
-    <th> Count</th>
+    <th> BLOOD TYPE</th>
+    <th> Available UNITS</th>
 </tr>
 
 <tr>
