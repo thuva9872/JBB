@@ -10,17 +10,18 @@ $count=$user->view_blood_inventory();
 ?>
 
 
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<HEAD>
+    <title>HOSPITAL</title>
 
-    <title>hospital blood inventory</title>
     <link rel="stylesheet" href="new-hospital-page-resorce/1.css">
    <style>
        h2 {text-align: center;}
    </style>
 </HEAD>
-
 <body>
 
     <div class="container">
@@ -34,11 +35,9 @@ $count=$user->view_blood_inventory();
         
         <nav>
             <ul>
-                <li></li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_request.php"> Blood Request</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_inventory.php"> View Blood Inventory</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/view_message.php">Messsages</a> </li>
-                <li></li> 
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
 
