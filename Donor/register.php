@@ -16,8 +16,16 @@
           
        }  
     ?>  
-        <html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONOR RESTRATION</title>
+
 <link rel="stylesheet" href="reg.css" type="text/css">
+<link rel="stylesheet" href="css/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/main.css">        
 <style>
     body {
         background-image: url('Donn.jpg');
@@ -32,29 +40,21 @@
             font-size: 20px;
         }
 </style>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
     <body>
         <div>
             <form action="register.php" method="post">
 
-            <h1>Donor Sign Up</h1>
+            <h1>DONOR SIGN UP</h1>
 
             <fieldset>
-            <legend><span class="number">A</span>Your basic info</legend>
-            <label for="name">Name:</label>
+            <legend><span class="number">A</span>YOUR BASIC INFO</legend>
+            <label for="name">NAME:</label>
             <input type="text" name="name" required>
 
             <label for="nic">NIC-NO:</label>
             <input type="text" name="nic_no" pattern="^([0-9]{9}[x|X|v|V]|[0-9]{12})$" maxlength="12" required>
 
-            <label for="password">Password:</label>
+            <label for="password">PASSWORD:</label>
             <input type="password" name="password1" id="psw" pattern="(?=.*\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
 
             <div id="message">
@@ -66,16 +66,16 @@
                 <br><br>
             </div>
 
-            <label for="password">Confirm Password:</label>
+            <label for="password">CONFIRM PASSWORD:</label>
             <input type="password" name="password2" required>
 
             </fieldset>
 
             <fieldset>
-            <legend><span class="number">B</span>Your profile</legend>
-            <label for="Address">Address:</label>
+            <legend><span class="number">B</span>YOUR PROFILE</legend>
+            <label for="Address">ADDRESS:</label>
             <textarea id="Address" name="address" required></textarea>
-            <label for="mobile-no">Mobile-No:</label>
+            <label for="mobile-no">MOBILE-NO:</label>
             <input type="mobile-no" name="mobile_no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10" required> 
 
             <label for="AGE">AGE:</label>
@@ -85,7 +85,7 @@
 
 
             <fieldset>
-            <label for="type">Blood-Type:</label>
+            <label for="type">BLOOD-TYPE:</label>
             <select id="type" name="blood_group">
             <optgroup label="A">
                 <option value="A+">A+</option>
@@ -106,7 +106,7 @@
             </optgroup>
             </select>
             </fieldset>
-            <input type="submit" id='register' name="create" value="SignUp" class="btn">
+            <input type="submit" id='register' name="create" value="SIGN UP" class="btn">
         </div>
     
     </body>
