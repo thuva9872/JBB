@@ -24,16 +24,20 @@
     header("location:\BMSfin\JBB\Hospital\login.php");  
   }  
 ?>
-<html>
 
-<HEAD>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>hospital main page</title>
+    <title>HOSPITAL</title>
+
     <link rel="stylesheet" href="new-hospital-page-resorce/1.css">
    <style>
        h2 {text-align: center;}
    </style>
 </HEAD>
+
 
 <body>
 
@@ -48,11 +52,9 @@
         
         <nav>
             <ul>
-                <li></li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_request.php"> Blood Request</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_inventory.php"> View Blood Inventory</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/view_message.php">Messsages</a> </li>
-                <li></li> 
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
 
