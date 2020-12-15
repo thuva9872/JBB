@@ -164,7 +164,7 @@ class Donor extends User  implements LoginUser {
         $query="SELECT * FROM blood_camp ORDER BY Date DESC, Time Desc";
         $d=$dbz->query($query);
         return $d;
-    }
+    }ss
 
     public function view_message(){
         $db=new DB();
