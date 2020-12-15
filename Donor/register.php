@@ -8,15 +8,12 @@
         $register = $user->register($_REQUEST['name'], $_REQUEST['nic_no'], stripslashes($_REQUEST['password1']),stripslashes($_REQUEST['password2']), $_REQUEST['address'], $_REQUEST['mobile_no'], $_REQUEST['age'], $_REQUEST['blood_group']);  
           if($register){  
             echo ("<SCRIPT LANGUAGE='JavaScript'>
-    window.alert('Succesfully Registered')
-    window.location.href='../index.php';
-    </SCRIPT>");
-            //echo '<script type="text/javascript"> alert("Re")</script>'; 
+        window.alert('Succesfully Registered')
+        window.location.href='../donor/login.php';
+            </SCRIPT>");
+            // echo ('<script type="text/javascript"> alert("Succesfully Registered") window.location.href='../login.php';</script>'; 
           }
-          else
-          {  
-             echo "Entered email already exist!";  
-          }  
+          
        }  
     ?>  
         <html>
