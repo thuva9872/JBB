@@ -56,7 +56,7 @@
       <textarea id="Address" name="address"></textarea>
           
           <label for="mail">MOBILE NUMBER:</label>
-          <input type="number" id="name" name="mobile_no">
+          <input type="text" id="name" name="mobile_no">
           
           <label for="password">PASSWORD:</label>
           <input type="password" id="password" name="password1">
@@ -67,7 +67,7 @@
           <input type="password" id="password" name="password2">
           
           
-        </fieldset>
+       </fieldset>
         
         
         
