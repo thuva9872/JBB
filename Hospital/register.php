@@ -50,7 +50,9 @@
           <label for="name">HOSPITAL NAME</label>
           <input type="text" id="name" name="name">
 
+
           <label for="Addres">ADDRESS:</label>
+
       <textarea id="Address" name="address"></textarea>
           
           <label for="mail">MOBILE NUMBER:</label>
@@ -59,7 +61,9 @@
           <label for="password">PASSWORD:</label>
           <input type="password" id="password" name="password1">
 
+
           <label for="password">CONFIRM PASSWORD:</label>
+
           <input type="password" id="password" name="password2">
           
           
