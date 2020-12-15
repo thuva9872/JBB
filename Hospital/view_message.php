@@ -48,11 +48,9 @@
         
         <nav>
             <ul>
-                <li></li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_request.php"> Blood Request</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/blood_inventory.php"> View Blood Inventory</a> </li>
                 <li> <a href="\BMSfin/JBB/Hospital/view_message.php">Messsages</a> </li>
-                <li></li> 
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
 
