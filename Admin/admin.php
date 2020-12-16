@@ -26,7 +26,7 @@ class Admin extends User implements LoginUser{
         //Fetch row.
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($user==false){
-            echo "incorret username or password";
+            // echo "incorret username or password";
         }
         else{
             $validpw=password_verify($pass, $user['Password']);
@@ -146,8 +146,8 @@ class Admin extends User implements LoginUser{
     public function remove_blood($blood){
         $db=new DB();
         $dbz=$db->getdb();
-        $id=$blood->getid();
-        $query="DELETE FROM blood_inventory WHERE ID='".$id."'";
+        // $id=$blood->getid();
+        $query="UPDATE blood_inventory SET Status='Expired' WHERE ID='".$blood."'";
         $stmt=$dbz->prepare($query);
         $result=$stmt->execute();
         if ($result){
@@ -164,9 +164,9 @@ class Admin extends User implements LoginUser{
             $stmtinsert=$dbz->prepare($sql);
             $result=$stmtinsert->execute([$title,$venue,$date,$time]);
             if ($result){
-                echo 'success';
+                echo '<script type="text/javascript"> alert("Added Succesfully.")</script>';
             }else{
-                echo 'failed';
+                echo '<script type="text/javascript"> alert("Failed. Try again later!!!")</script>';
             }
         }
 
@@ -190,9 +190,9 @@ class Admin extends User implements LoginUser{
             $stmtinsert2=$dbz->prepare($sql2);
             $result2=$stmtinsert2->execute([$donor_id,$donated_date,$donated_place,$status]);
             if ($result1 && $result2){
-                echo 'success';
+                echo '<script type="text/javascript"> alert("Blood sample added Succesfully.")</script>';
             }else{
-                echo 'failed';
+                echo '<script type="text/javascript"> alert("Failed. Try again later!!!")</script>';
             }
         }
 
@@ -223,9 +223,9 @@ class Admin extends User implements LoginUser{
             $stmtinsert=$dbz->prepare($sql);
             $result=$stmtinsert->execute([$blood_type,$message,$date]);
             if ($result){
-            echo 'success';
+                echo '<script type="text/javascript"> alert("Request sent succesfully.")</script>';
             }else{
-            echo 'failed';
+                echo '<script type="text/javascript"> alert("Request sent failed. Try again later!!!")</script>';
             }
         }
 }

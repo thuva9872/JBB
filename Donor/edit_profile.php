@@ -53,7 +53,7 @@ if (isset($_POST["update"])){
                 <li></li>
                 <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
                 <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood camps</a> </li>
-                <li> <a href="\BMSfin/JBB/Donor/view_message.php">MEsssages</a> </li>
+                <li> <a href="\BMSfin/JBB/Donor/view_message.php">Messsages</a> </li>
                  
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>
@@ -98,7 +98,7 @@ if (isset($_POST["update"])){
 
 <style>
 button {
-  background-color: #4CAF50; /* Green */
+  background-color: gray; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -106,23 +106,24 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-}</style>
+}
+</style>
 <body>
 
 
-  <form action="" method="post">
+  <form action="" method="post" style="background-color:white">
   
     <h1>D-profile</h1>
     
     <fieldset>
 
       <label for="email"> Change Email:</label>
-      <input type="text" id="name" name="email">
+      <input type="text" id="name" name="email" style="background-color:gray">
       <label for="Addres">Change Addres:</label>
-      <textarea id="Address" name="address"></textarea>
+      <textarea id="Address" name="address" style="background-color:gray"></textarea>
       
       <label for="mobile-no">Change Mobile-No:</label>
-      <input type="mobile-no" id="num" name="mobile-no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10">
+      <input type="mobile-no" id="num" name="mobile-no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10" style="background-color:gray">
       
       
     </fieldset>

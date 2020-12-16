@@ -168,20 +168,20 @@ label {
       
       
       <label for="title"  class="fa fa-align-right" aria-hidden="true"></i>TITLE:</label>
-      <input type="text" id="name" name="title">
+      <input type="text" id="name" name="title" required>
 
       <label for="venue">VENUE</label>
-      <input type="text" id="name" name="venue">
+      <input type="text" id="name" name="venue" required>
 
     
       
     
      
       <label for="date">DATE</label>
-      <input type="date" id="name" name="date">
+      <input type="date" id="date" name="date" min="2020-11-16" required> 
       
       <label for="time">TIME</label>
-      <input type="time" id="name" name="time">
+      <input type="time" id="name" name="time" required>
       <button type="submit" name="add">ADD</button>
     </fieldset>
 
@@ -240,6 +240,21 @@ input[type=button], input[type=submit], input[type=reset] {
        <!--end of about-->
     </div>
 </body>
+<script>
+  var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("date").setAttribute("min", today);
+  </script>
 </html>
 
 

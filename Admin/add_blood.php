@@ -107,11 +107,11 @@
     <fieldset>
       
       <label for="number"></label>BLOOD ID:</label>
-      <input type="number" id="number" name="id">
+      <input type="text" id="number" name="id" pattern="[0-9]{}" required>
 
       <fieldset>
         <label for="type">Blood-Type:</label>
-        <select id="type" name="blood_type">
+        <select id="type" name="blood_type" required> 
           <optgroup label="A">
             <option value="A+">A+</option>
             <option value="A-">A-</option>
@@ -136,18 +136,18 @@
         </fieldset>
       
       <label for="number"></label>DONOR NIC-NO:</label>
-      <input type="text" id="number" name="nic">
+      <input type="text" id="number" name="nic" pattern="^([0-9]{9}[x|X|v|V]|[0-9]{12})$" maxlength="12" required>
       
       
       
     <fieldset>
       
       <label for="Addres">Donate place:</label>
-      <textarea id="Address" name="place"></textarea>
+      <textarea id="Address" name="place" required></textarea>
       
       
       <label for="Date">DATE:</label>
-      <input type="date" id="date" name="date">
+      <input type="date" id="ddate" name="date" max="" required>
 
     </fieldset>
 
@@ -161,5 +161,20 @@
        <!--end of about-->
     </div>
 </body>
+<script>
+  var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    } 
+    if(mm<10){
+        mm='0'+mm
+    } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("ddate").setAttribute("max", today);
+  </script>
 </html>
 
