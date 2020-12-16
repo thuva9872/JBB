@@ -142,7 +142,7 @@ if(isset($_POST['request'])){
     
 
     <label for="Date">REQUIRED DATE:</label>
-      <input type="date" id="date" name="date" min="2020-11-16" ?> 
+      <input type="date" id="date" name="date" min="2020-11-16" > 
 
       <button type="submit" name="request">Request</button>
   </form>

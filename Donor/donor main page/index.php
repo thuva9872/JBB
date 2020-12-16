@@ -41,10 +41,12 @@
         
         <nav>
             <ul>
+
               <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
-              <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> BloodCamps</a> </li>
+              <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood Camps</a> </li>
               <li> <a href="\BMSfin/JBB/Donor/view_message.php">Messages</a> </li>
                 <li> <a href="?q=logout">Logout</a> </li>
+
             </ul>
 
         </nav>

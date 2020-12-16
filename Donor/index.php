@@ -45,7 +45,7 @@
                 <li></li>
                 <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
                 <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood camps</a> </li>
-                <li> <a href="\BMSfin/JBB/Donor/view_message.php">MEsssages</a> </li>
+                <li> <a href="\BMSfin/JBB/Donor/view_message.php">Messsages</a> </li>
                 <li></li>  
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>

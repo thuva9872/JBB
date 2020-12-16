@@ -6,7 +6,7 @@
     $user = $factory->getUser("admin");
     $db=new DB();
     $dbz=$db->getdb();
-    $query="SELECT * FROM blood_inventory";
+    $query="SELECT * FROM blood_inventory WHERE Status='Usable'";
     $d=$dbz->query($query);
     if (!$user->session()){  
         header("location:login.php");  
@@ -16,7 +16,7 @@
         
         $result=$user->remove_blood($id);
         if($result==true){
-            $query="SELECT * FROM blood_inventory";
+            $query="SELECT * FROM blood_inventory WHERE Status='Usable'";
             $d=$dbz->query($query);
         }
     }
@@ -32,7 +32,7 @@ if (isset($_REQUEST["request"])){
     
     $result=$user->send_request($group,"Blood Finished",date("Y-m-d"));
     if($result==true){
-        $query="SELECT * FROM blood_inventory";
+        $query="SELECT * FROM blood_inventory WHERE Status='Usable'";
         $d=$dbz->query($query);
     }
 }
@@ -209,7 +209,7 @@ input[type=button],  input[type=reset] {
     <th> BLOOD-TYPE</th>
     <th> DONOR-NIC-NUMBER</th>
     <th> DONATED -DATE</th>
-    <th> is REMOVE?..</th>
+    <th> </th>
 </tr>
 <?php foreach($d as $data){
 ?>
@@ -218,7 +218,7 @@ input[type=button],  input[type=reset] {
     <td><?php echo $data["Blood_Type"]; ?></td>
     <td><?php echo $data["Donor"]; ?></td>
     <td><?php echo $data["Donated_Date"]; ?></td>
-    <td><form action="" method="POST"><input type="hidden" name="id" value=<?php echo $data["ID"]; ?>> <input type="button" name="submit" value="Remove" onclick="return confirm('Are you sure you want to delete this user?');"></form></td>
+    <td><form action="" method="POST"><input type="hidden" name="id" value=<?php echo $data["ID"]; ?>> <input type="submit" name="submit" value="Remove" onclick="return confirm('Are you sure you want to delete this blood sample?');"></form></td>
 </tr>
 <?php
 }

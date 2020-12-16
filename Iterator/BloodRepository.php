@@ -9,7 +9,7 @@ include_once ('C:\xampp\htdocs\BMSfin\JBB\class.php');
         public function __construct(){
             $db=new DB();
             $dbz=$db->getdb();
-            $query="SELECT * FROM blood_inventory";
+            $query="SELECT * FROM blood_inventory WHERE Status='Usable'";
             $d=$dbz->query($query);
             while ($i=$d->fetch()){
                 array_push($this->list,$i);
