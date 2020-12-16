@@ -92,7 +92,7 @@ class Hospital extends User implements LoginUser{
                 echo "";
               }
             }
-            if ($address!="" || $mobile_no!="" || $Title!=""){
+            if ($address!="" || $mobile_no!="" || $title!=""){
               echo '<script type="text/javascript"> alert("Updated Succesfully");
               window.location.href="index.php";
               </script>';
