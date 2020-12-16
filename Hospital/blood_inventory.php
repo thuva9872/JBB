@@ -8,7 +8,20 @@ if (!$user->session()){
  }  
 $count=$user->view_blood_inventory();
 ?>
-
+<?php
+   
+   include_once ('C:\xampp\htdocs\BMSfin\JBB\Login\Factory.php');
+   $factory=new Factory();
+   $user = $factory->getUser("hospital");  
+   $id = $_SESSION['id'];  
+   if (!$user->session()){  
+     header("location:\BMSfin\JBB\Hospital\login.php");  
+   }  
+   if (isset($_REQUEST['q'])){  
+     $user->logout();  
+     header("location:\BMSfin\JBB\Hospital\login.php");  
+   }  
+ ?>
 
 <html lang="en">
 <head>
