@@ -39,16 +39,17 @@
 
 
 
-<html>
-
-<HEAD>
-
-    <title>Admin main page</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN | Add Blood Camp</title>
     <link rel="stylesheet" href="new-donor-page/3.css">
-   <style>
-       h2 {text-align: center;}
-   </style>
-</HEAD>
+   
+<style> 
+ h2 {text-align: center;}
+
+</style>
 
 <body>
 
@@ -63,8 +64,8 @@
             <ul>
                 <li></li>
                 <li> <a href="request_donation.php">REQUEST-BLOOD</a> </li>
-                <li> <a href="manage_hospital.php" >MANNAGE-HOSPITALS</a> </li>
-                <li> <a href="manage_donor.php" >MANNAGE-DONORS</a> </li>
+                <li> <a href="manage_hospital.php" >MANAGE-HOSPITALS</a> </li>
+                <li> <a href="manage_donor.php" >MANAGE-DONORS</a> </li>
                 <li> <a href="view_request.php" >VIEW-REQUEST</a> </li>
                 <li> <a href="blood_camp.php"  >ADD-BLOOD-CAMP</a> </li>
                 <li> <a href="add_blood.php" >ADD-BLOOD</a> </li>
@@ -74,7 +75,6 @@
             </ul>
 
         </nav>
-
         <div class="user">
            
             <img src="new-donor-page/logo.png">
