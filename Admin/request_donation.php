@@ -26,47 +26,48 @@ if(isset($_POST['request'])){
        }  
     
     ?>  
-
-<html>
-
-<HEAD>
-
-    <title>Admin main page-blood requst</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN | Blood Request</title>
     <link rel="stylesheet" href="new-donor-page/1.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="reg.css" type="text/css">
    <style>
        h2 {text-align: center;}
+       body {
+      background-image: url('telemedicine.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      background-size: cover;
+    }
    </style>
 </HEAD>
-
 <body>
 
     <div class="container">
 
         <div  class="navbar">
             <br>
-            <h2 text-align="center" style="font-display: #ccc;">ADMIN</h2>
+            <h2 text-align="left" style="font-display: #ccc;">ADMIN</h2>
            
         
         <nav>
             <ul>
-                <li></li>
-                <li> <a href="request_donation.php">REQUST-BLOOD</a> </li>
-                <li> <a href="manage_hospital.php" >MANNAGE-HOSPITALS</a> </li>
-                <li> <a href="manage_donor.php" >MANNAGE-DONORS</a> </li>
-                <li> <a href="view_request.php" >VIEW-REQUES</a> </li>
-                <li> <a href="blood_camp.php"  >ADD-BLOOD-CAMP</a> </li>
-                <li> <a href="add_blood.php" >ADD-BLOOD</a> </li>
-                <li> <a href="blood_inventory.php" >BLOOD-INVENTORY</a> </li>
-                <li></li> <li></li>
+            <li> <a href="request_donation.php">Request Blood</a> </li>
+                <li> <a href="manage_hospital.php" >Manage Hospital</a> </li>
+                <li> <a href="manage_donor.php" >Manage Donors</a> </li>
+                <li> <a href="view_request.php" >View Request</a> </li>
+                <li> <a href="blood_camp.php"  >Add BloodCamp</a> </li>
+                <li> <a href="add_blood.php" >Add Blood</a> </li>
+                <li> <a href="blood_inventory.php" >Blood Inventory</a> </li>
                <li> <a href="?q=logout"  > LOG-OUT</a> </li>
             </ul>
 
         </nav>
-
-        <div class="user">
-           
-            <img src="new-donor-page/logo.png">
-        </div>
 
         </div>
 
@@ -76,26 +77,7 @@ if(isset($_POST['request'])){
          
          
        </div>
-       
-       <!-- this div for info about donor page-->
 
-       <link rel="stylesheet" href="reg.css" type="text/css">
-<style>
-    body {
-      background-image: url('telemedicine.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed; 
-      background-size: cover;
-    }
-    </style>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/main.css">
-</head>
 <body>
 
   <form action="request_donation.php" method="post">

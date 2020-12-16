@@ -25,17 +25,18 @@ if (isset($_POST["update"])){
 ?>
 
 
-
-<html>
-
-<HEAD>
-
-    <title>Donor update profile</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONOR_UpdateProfile</title>
     <link rel="stylesheet" href="new-donor-page/1.css">
+    
    <style>
        h2 {text-align: center;}
    </style>
 </HEAD>
+
 
 <body>
 
@@ -50,10 +51,12 @@ if (isset($_POST["update"])){
         
         <nav>
             <ul>
-                <li></li>
+             
                 <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
                 <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood camps</a> </li>
+
                 <li> <a href="\BMSfin/JBB/Donor/view_message.php">Messsages</a> </li>
+
                  
                 <li> <a href="?q=logout"> LOG-OUT</a> </li>
             </ul>

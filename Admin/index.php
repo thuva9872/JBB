@@ -14,52 +14,41 @@
     
     ?>  
 
-
-
-
-
-
-<html>
-
-<HEAD>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin main page</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN | main page</title>
     <link rel="stylesheet" href="new-donor-page/1.css">
    <style>
        h2 {text-align: center;}
    </style>
 </HEAD>
-
 <body>
 
     <div class="container">
 
         <div  class="navbar">
             <br>
-            <h2 text-align="center" style="font-display: #ccc;">ADMIN</h2>
+            <h2 text-align="left" style="font-display: #ccc;">ADMIN</h2>
            
         
         <nav>
             <ul>
-                <li></li>
-                <li> <a href="request_donation.php">REQUST-BLOOD</a> </li>
-                <li> <a href="manage_hospital.php" >MANNAGE-HOSPITALS</a> </li>
-                <li> <a href="manage_donor.php" >MANNAGE-DONORS</a> </li>
-                <li> <a href="view_request.php" >VIEW-REQUES</a> </li>
-                <li> <a href="blood_camp.php"  >ADD-BLOOD-CAMP</a> </li>
-                <li> <a href="add_blood.php" >ADD-BLOOD</a> </li>
-                <li> <a href="blood_inventory.php" >BLOOD-INVENTORY</a> </li>
-                <li></li> <li></li>
+
+                <li> <a href="request_donation.php">Request Blood</a> </li>
+                <li> <a href="manage_hospital.php" >Manage Hospital</a> </li>
+                <li> <a href="manage_donor.php" >Manage Donors</a> </li>
+                <li> <a href="view_request.php" >View Request</a> </li>
+                <li> <a href="blood_camp.php"  >Add BloodCamp</a> </li>
+                <li> <a href="add_blood.php" >Add Blood</a> </li>
+                <li> <a href="blood_inventory.php" >Blood Inventory</a> </li>
                <li> <a href="?q=logout"  > LOG-OUT</a> </li>
             </ul>
 
         </nav>
 
-        <div class="user">
-           
-            <img src="new-donor-page/logo.png">
-        </div>
-
+        
         </div>
 
        <div class="sidebar">
@@ -74,8 +63,8 @@
        <div class="msg-container">
          <div id="slider">
               <div class="msg-col">
-                 <h1> ADMINISTRATION</h1>
-                 <img src="new-donor-page/ad.png"alt="add" width="1000" height="800">
+                 
+                 <img src="new-donor-page/ad.png"alt="add" width="800" height="600">
 
               </div>
              

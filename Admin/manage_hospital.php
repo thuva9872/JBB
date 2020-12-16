@@ -34,10 +34,15 @@
     
     ?>  
 
-<html>
-
-<HEAD>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN | Manage Hospital</title>
+    <link rel="stylesheet" href="new-donor-page/1.css">
+   
 <style> 
+ h2 {text-align: center;}
 input[type=button], input[type=submit], input[type=reset] {
   background-color: #f44336;
   border: none;
@@ -48,13 +53,6 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 </style>
-
-    <title>Admin main page</title>
-    <link rel="stylesheet" href="new-donor-page/1.css">
-   <style>
-       h2 {text-align: center;}
-   </style>
-</HEAD>
 
 <body>
 
@@ -68,10 +66,10 @@ input[type=button], input[type=submit], input[type=reset] {
         <nav>
             <ul>
                 <li></li>
-                <li> <a href="request_donation.php">REQUST-BLOOD</a> </li>
-                <li> <a href="manage_hospital.php" >MANNAGE-HOSPITALS</a> </li>
-                <li> <a href="manage_donor.php" >MANNAGE-DONORS</a> </li>
-                <li> <a href="view_request.php" >VIEW-REQUES</a> </li>
+                <li> <a href="request_donation.php">REQUEST-BLOOD</a> </li>
+                <li> <a href="manage_hospital.php" >MANAGE-HOSPITALS</a> </li>
+                <li> <a href="manage_donor.php" >MANAGE-DONORS</a> </li>
+                <li> <a href="view_request.php" >VIEW-REQUEST</a> </li>
                 <li> <a href="blood_camp.php"  >ADD-BLOOD-CAMP</a> </li>
                 <li> <a href="add_blood.php" >ADD-BLOOD</a> </li>
                 <li> <a href="blood_inventory.php" >BLOOD-INVENTORY</a> </li>
@@ -130,11 +128,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 </html>
 
-
-       <!--end of about-->
     </div>
 </body>
 </html>
-
-------------------------------------------------------------------------
 

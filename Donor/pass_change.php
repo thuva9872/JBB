@@ -7,9 +7,18 @@ if (isset($_POST["change"])){
   $user->change_password($_REQUEST['old_password'],$_REQUEST['new_password'],$_REQUEST['confirm_password']);
 }
 ?>
-<html>
-<link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="pass change-framecss.css" type="text/css">
+<<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONOR_ChangePassword</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="pass change-framecss.css" type="text/css">
+    
+   <style>
+       h2 {text-align: center;}
+   </style>
+</HEAD>
 <div class="login">
   <div class="login-header">
     <h2>Change Password</h2>
@@ -17,9 +26,10 @@ if (isset($_POST["change"])){
   <div class="login-form">
   <form action="" method="post">
     <h3>OLD-Password:</h3>
-    <input type="password" name="old_password" placeholder="Password"/>
+    <input type="password" name="OLD PASSWORD" placeholder="Password"/>
     <br>
     <h3>New-Password:</h3>
+
     <input type="password" name="new_password" placeholder="Password" id="psw" pattern="(?=.*\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
 
     <div id="message">
@@ -31,9 +41,10 @@ if (isset($_POST["change"])){
                 <br><br>
     </div>
 
+
     <br>
     <h3>Confirm-Password:</h3>
-    <input type="password" name="confirm_password" placeholder="Password"/>
+    <input type="password" name="CONFIRM PASSWORD" placeholder="Password"/>
     <br>
     <button type="submit" name="change">CHANGE</button>
     <br>
@@ -41,6 +52,7 @@ if (isset($_POST["change"])){
     
   </div>
 </div>
+
 <script>
             var myInput = document.getElementById("psw");
 
@@ -55,3 +67,4 @@ if (isset($_POST["change"])){
             }
     </script>
 </html>
+

@@ -17,37 +17,36 @@
 ?>
 
 
-
-<html>
-
-<HEAD>
-
-    <title>Donor mainpage</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONOR</title>
     <link rel="stylesheet" href="new-donor-page/1.css">
    <style>
        h2 {text-align: center;}
    </style>
 </HEAD>
 
+   
 <body>
 
     <div class="container">
 
         <div  class="navbar">
-            <br>
-            <h2 text-align="center" >DONOR</h2>
+            <h2 text-align= "left">DONOR</h2>
             <div class="logo">  
                 <img src="new-donor-page/logo.png">
             </div>
         
         <nav>
             <ul>
-                <li></li>
-                <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
-                <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood camps</a> </li>
-                <li> <a href="\BMSfin/JBB/Donor/view_message.php">Messsages</a> </li>
-                <li></li> <li></li>  
-                <li> <a href="?q=logout"> LOG-OUT</a> </li>
+
+              <li> <a href="\BMSfin/JBB/Donor/donation_details.php"> Donation Details</a> </li>
+              <li> <a href="\BMSfin/JBB/Donor/blood_camp.php"> Blood Camps</a> </li>
+              <li> <a href="\BMSfin/JBB/Donor/view_message.php">Messages</a> </li>
+                <li> <a href="?q=logout">Logout</a> </li>
+
             </ul>
 
         </nav>
@@ -67,36 +66,6 @@
        
        <!-- this div for info about donor page-->
 
-       <div class="msg-container">
-         <div id="slider">
-              <div class="msg-col">
-                 <h1>  Donation Details</h1>
-                 <p>Donors can view thier past donation details</p>
-                 <img src="new-donor-page/det.png" alt="det" width="400" height="400">
-
-              </div>
-              <br>
-              <div class="msg-col">
-                <h1>  Blood camp Details</h1>
-                <p>Donors can view blood camps and donate thier blood</p>
-                <img src="new-donor-page/cam.png" alt="cam" width="400" height="400">
-
-             </div>
-
-             <div class="msg-col">
-                <h1>  Messages</h1>
-                <p>Donors recive mesages from admin when blood is needed</p>
-                <p>.</p>
-                <p>.</p>
-                <p>.</p>
-                <img src="new-donor-page/msg.png" alt="msg" width="300" height="200">
-
-             </div>
-
-         </div>
-
-       </div>
-       <!--end of about-->
-    </div>
+     
 </body>
 </html>
