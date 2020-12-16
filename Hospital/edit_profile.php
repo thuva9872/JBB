@@ -94,7 +94,7 @@ if (isset($_POST["update"])){
       <input type="text" id="name" name="Title">
 
       <label for="email">CHANGE PHONE NUMBER:</label>
-      <input type="text" id="name" name="mobile_no">
+      <input type="text" id="name" name="mobile_no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10">
 
     
       
@@ -119,6 +119,16 @@ if (isset($_POST["update"])){
        <!--end of about-->
     </div>
 </body>
+<script> 
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    } 
+    </script> 
 </html>
 
 -----------------------------------------------------------------------------------------------

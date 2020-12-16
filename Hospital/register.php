@@ -63,7 +63,7 @@
           
           <label for="mail">MOBILE NUMBER:</label>
 
-          <input type="number" id="name" name="mobile_no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10" required>
+          <input type="text" id="name" name="mobile_no" onkeypress="return onlyNumberKey(event)" pattern="[0-9]{10}" maxlength="10" required>
           
           <label for="password">Password:</label>
           <input type="password" name="password1" id="psw" pattern="(?=.*\d)(?=.[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
